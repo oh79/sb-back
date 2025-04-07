@@ -31,6 +31,23 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// Spring Data JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // H2 Database (테스트용)
+    runtimeOnly 'com.h2database:h2'
+
+    // Spring Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // JWT (예: 토큰 인증)
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	
+	// Validation (@Valid 등)
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
